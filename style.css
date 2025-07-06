@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.6;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Fundos decorativos */
+.fundo-dots,
+.fundo-girassol {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.fundo-dots {
+  z-index: -3;
+}
+
+.fundo-girassol {
+  z-index: -2;
+}
+
+.dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #3a2101;
+  opacity: 0.8;
+}
+
+.sunflower {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url('assets/girassol1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #5c3a21;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFF8DC;
+}
+
+.subtitulo {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: #FFF;
+}
+
+/* Bloco motivacional */
+.motivacional {
+  background-color: #ffff56;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.motivacional h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  color: #3a2101;
+  margin-bottom: 0.5rem;
+}
+
+.motivacional p {
+  font-size: 1.2rem;
+  color: #161616;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Seção principal */
+.entradas {
+  font-size: 2rem;
+  margin: 4rem auto;
+}
+
+main h2 {
+  margin: 30px 0 15px;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Cards de entrada */
+.card-com-faixa {
+  position: relative;
+  max-width: 700px;
+  margin: 60px auto;
+  padding-bottom: 100px;
+  overflow: visible;
+  z-index: 1;
+}
+
+.card-com-faixa .faixa-girassol {
+  position: absolute;
+  bottom: 3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card-com-faixa article {
+  position: relative;
+  background-color: rgba(255, 243, 190, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(8, 7, 1, 0.4);
+  margin: 0;
+  padding: 5px;
+  z-index: 2;
+}
+
+.cabecalho {
+  background-color: #fee331;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.cabecalho h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #3a2101;
+}
+
+.cabecalho time {
+  font-size: 0.9rem;
+  color: #3a3a3a;
+}
+
+.conteudo {
+  padding: 15px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.categoria {
+  background-color: #FFF8DC;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  color: #3a2101;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #FFF8DC;
+  background-color: #3a2101;
+}
+
+/* Botão modo escuro */
+.modo-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.modo-btn:hover {
+  transform: scale(1.2);
+}
+
+/* 🌙 Modo escuro */
+body.modo-escuro {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+body.modo-escuro .header {
+  background-color: #1a1a1a;
+  color: #facc15;
+}
+
+body.modo-escuro .motivacional {
+  background-color: #ffff56;
+}
+
+body.modo-escuro .motivacional h2 {
+  color: #3a2101;
+}
+
+body.modo-escuro article {
+  background-color: #ffed50c4;
+  box-shadow: 0 2px 6px rgb(255, 217, 2);
+}
+
+body.modo-escuro .conteudo {
+  background-color: #fffc36c0;
+  color: #1a1a1a;
+}
+
+body.modo-escuro .cabecalho {
+  background-color: #facc15de;
+}
+
+body.modo-escuro .categoria {
+  background-color: #050300ea;
+  color: #facc15;
+  border-top: 1px solid #3a3a3a;
+}
+
+body.modo-escuro footer {
+  background-color: #111;
+  color: #fff;
+}
+
+body.modo-escuro .dot {
+  background-color: #facc15;
+  opacity: 0.4;
+}
+
+body.modo-escuro .sunflower {
+  opacity: 0.05;
+}
+
+
+
