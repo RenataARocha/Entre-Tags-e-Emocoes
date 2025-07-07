@@ -287,9 +287,10 @@ footer {
   transform: scale(1.2);
 }
 
+
 /* 🌙 Modo escuro */
 body.modo-escuro {
-  background-color: #1a1a1a;
+  background-color: #121212;
   color: #f0f0f0;
 }
 
@@ -307,18 +308,19 @@ body.modo-escuro .motivacional h2 {
 }
 
 body.modo-escuro article {
-  background-color: #ffed50c4;
-  box-shadow: 0 2px 6px rgb(255, 217, 2);
+  background-color: rgba(255, 237, 80, 0.15); /* amarelo suave e transparente */
+  box-shadow: 0 2px 6px rgba(255, 217, 2, 0.3); /* sombra amarela suave */
 }
 
 body.modo-escuro .conteudo {
-  background-color: #fffc36c0;
-  color: #1a1a1a;
+  background-color: rgba(255, 252, 54, 0.12);
+  color: #e0dccc; /* um off-white quente que não grita tanto */
 }
 
 body.modo-escuro .cabecalho {
-  background-color: #facc15de;
+  background-color: rgba(250, 204, 21, 0.3);
 }
+
 
 body.modo-escuro .categoria {
   background-color: #050300ea;
