@@ -21,23 +21,33 @@ for (let i = 0; i < numDots; i++) {
   fundoDots.appendChild(dot); // adiciona no container específico
 }
 
-// 🌻 GIRASSÓIS TRANSPARENTES NO FUNDO
-const numSunflowers = 5;
+
+// 🌻 GIRASSÓIS GRANDÕES ESPALHADOS NO FUNDO
+const numSunflowers = 6; // pode aumentar se quiser mais
 const fundoGirassol = document.querySelector('.fundo-girassol');
 
 for (let i = 0; i < numSunflowers; i++) {
   const sunflower = document.createElement('div');
   sunflower.classList.add('sunflower');
 
-  // Posição aleatória na tela
-  sunflower.style.top = `${Math.random() * 100}%`;
-  sunflower.style.left = `${Math.random() * 100}%`;
+  // Posição aleatória, mas com espaçamento mínimo
+  const top = Math.random() * 80; // deixa um pouco de margem embaixo
+  const left = Math.random() * 90; // não cola nas bordas
 
-  // Rotação e escala aleatória para parecer natural
-  sunflower.style.transform = `rotate(${Math.random() * 360}deg) scale(${8 + Math.random() * 0.5})`;
+  sunflower.style.top = `${top}%`;
+  sunflower.style.left = `${left}%`;
 
-  fundoGirassol.appendChild(sunflower); // adiciona no container acima dos dots
+  // Escala entre 1.5 e 2.2 — BEM GRANDÕES
+  const scale = 1.5 + Math.random() * 0.7;
+  const rotate = Math.random() * 360;
+
+  sunflower.style.transform = `rotate(${rotate}deg) scale(${scale})`;
+
+  fundoGirassol.appendChild(sunflower);
 }
+
+
+
 
 // ✨ FRASE MOTIVACIONAL OU VERSÍCULO DO DIA
 const frases = [

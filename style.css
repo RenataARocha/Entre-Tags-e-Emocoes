@@ -15,9 +15,9 @@ body {
   padding: 20px;
 }
 
+
 /* Fundos decorativos */
-.fundo-dots,
-.fundo-girassol {
+.fundo-dots {
   position: fixed;
   top: 0;
   left: 0;
@@ -26,13 +26,11 @@ body {
   pointer-events: none;
 }
 
+
 .fundo-dots {
   z-index: -3;
 }
 
-.fundo-girassol {
-  z-index: -2;
-}
 
 .dot {
   position: absolute;
@@ -43,20 +41,73 @@ body {
   opacity: 0.8;
 }
 
+
+.fundo-girassol {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Estilo base dos girassóis */
 .sunflower {
   position: absolute;
-  width: 60px;
-  height: 60px;
   background-image: url('assets/girassol1.png');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.08;
+  opacity: 0.07;
+  z-index: -1;
 }
+
+/* 🌻 Versão MAIOR dos girassóis */
+.sunflower-1 {
+  top: 3%;
+  left: 2%;
+  width: 300px;
+  height: 300px;
+  transform: rotate(15deg);
+}
+
+.sunflower-2 {
+  top: 10%;
+  right: 5%;
+  width: 260px;
+  height: 260px;
+  transform: rotate(-20deg);
+}
+
+.sunflower-3 {
+  bottom: 8%;
+  left: 8%;
+  width: 280px;
+  height: 280px;
+  transform: rotate(5deg);
+}
+
+.sunflower-4 {
+  bottom: 5%;
+  right: 3%;
+  width: 320px;
+  height: 320px;
+  transform: rotate(-10deg);
+}
+
+.sunflower-5 {
+  top: 45%;
+  left: 35%;
+  width: 240px;
+  height: 240px;
+  transform: rotate(25deg);
+}
+
 
 /* Cabeçalho */
 .header {
   background-color: #5c3a21;
-  padding: 30px;
+  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -78,7 +129,6 @@ body {
 /* Bloco motivacional */
 .motivacional {
   background-color: #ffff56;
-  padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
@@ -104,7 +154,7 @@ body {
 /* Seção principal */
 .entradas {
   font-size: 2rem;
-  margin: 4rem auto;
+  margin: 5rem auto;
 }
 
 main h2 {
@@ -113,8 +163,48 @@ main h2 {
   font-family: 'Playfair Display', serif;
 }
 
+
+
+
+.card-principal {
+  position: relative;
+  margin: 4rem auto;
+  max-width: 1200px;
+  height: 280px;
+  padding: 1.5rem 1rem 2rem;
+  background-color: #ffffffbb; /* cor sólida clara */
+  box-shadow: 0 8px 24px rgb(58, 33, 1); /* sombra marrom suave */
+  border-radius: 12px;
+  overflow: visible;
+  z-index: 1;
+}
+
+
+
+.card-principal > .motivacional,
+.card-principal > header {
+  position: relative;
+  z-index: 1;
+}
+
+
+.faixa-girassol-atras {
+  position: absolute;
+  top: 10; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180%;
+  max-width: 1500px;
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+
+  filter: drop-shadow(0 0 10px #b8860b); /* tom dourado ou marrom claro */
+}
+ 
+
 /* Cards de entrada */
-.card-com-faixa {
+.card-container {
   position: relative;
   max-width: 700px;
   margin: 60px auto;
@@ -123,25 +213,19 @@ main h2 {
   z-index: 1;
 }
 
-.card-com-faixa .faixa-girassol {
-  position: absolute;
-  bottom: 3.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 130%;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.card-com-faixa article {
+.card-container article {
   position: relative;
-  background-color: rgba(255, 243, 190, 0.95);
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  background-color: #ffffff90; 
+  box-shadow: 0 12px 24px rgba(58, 33, 1, 0.445);/* leve transparência */
   border-radius: 12px;
-  box-shadow: 0 12px 24px rgba(8, 7, 1, 0.4);
-  margin: 0;
-  padding: 5px;
   z-index: 2;
 }
+
+
+
 
 .cabecalho {
   background-color: #fee331;
@@ -188,7 +272,7 @@ footer {
 
 /* Botão modo escuro */
 .modo-btn {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   background: transparent;
