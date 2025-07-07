@@ -106,7 +106,7 @@ body {
 
 /* Cabeçalho */
 .header {
-  background-color: #5c3a21;
+  background-color: #271609de;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -168,12 +168,12 @@ main h2 {
 
 .card-principal {
   position: relative;
-  margin: 4rem auto;
-  max-width: 1200px;
-  height: 280px;
-  padding: 1.5rem 1rem 2rem;
-  background-color: #ffffffbb; /* cor sólida clara */
-  box-shadow: 0 8px 24px rgb(58, 33, 1); /* sombra marrom suave */
+  margin: 2rem auto;
+  max-width: 950px;
+  height: 270px;
+  padding: 1rem 1rem 2rem;
+  background-color: #fcd47fbb; /* cor sólida clara */
+  box-shadow: 0 8px 24px rgba(58, 33, 1, 0.726); /* sombra marrom suave */
   border-radius: 12px;
   overflow: visible;
   z-index: 1;
@@ -190,11 +190,10 @@ main h2 {
 
 .faixa-girassol-atras {
   position: absolute;
-  top: 10; 
   left: 50%;
   transform: translateX(-50%);
   width: 180%;
-  max-width: 1500px;
+  max-width: 1200px;
   z-index: -1;
   pointer-events: none;
   user-select: none;
@@ -208,7 +207,7 @@ main h2 {
   position: relative;
   max-width: 700px;
   margin: 60px auto;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   overflow: visible;
   z-index: 1;
 }
@@ -288,58 +287,57 @@ footer {
 }
 
 
-/* 🌙 Modo escuro */
+/* 🌙 Modo escuro girassol aconchegante */
 body.modo-escuro {
-  background-color: #121212;
-  color: #f0f0f0;
+  background-color: #2e1e13;
+  color: #fcecc2;
 }
 
 body.modo-escuro .header {
-  background-color: #1a1a1a;
-  color: #facc15;
+  background-color: #3b2618;
+  color: #e3b23c;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 body.modo-escuro .motivacional {
-  background-color: #ffff56;
+  background-color: #ffd05ae0;
 }
 
 body.modo-escuro .motivacional h2 {
-  color: #3a2101;
+  color: #4b2e20;
 }
 
 body.modo-escuro article {
-  background-color: rgba(255, 237, 80, 0.15); /* amarelo suave e transparente */
-  box-shadow: 0 2px 6px rgba(255, 217, 2, 0.3); /* sombra amarela suave */
+  background-color:  #271609de;
+  box-shadow: 0 2px 6px rgb(32, 18, 0);
 }
 
 body.modo-escuro .conteudo {
-  background-color: rgba(255, 252, 54, 0.12);
-  color: #e0dccc; /* um off-white quente que não grita tanto */
+  background-color: rgba(253, 173, 0, 0.07);
+  color: #fcecc2;
 }
 
 body.modo-escuro .cabecalho {
-  background-color: rgba(250, 204, 21, 0.3);
+  background-color: #fdbb3ff3;
 }
 
-
 body.modo-escuro .categoria {
-  background-color: #050300ea;
-  color: #facc15;
-  border-top: 1px solid #3a3a3a;
+  background-color: #201106;
+  color: #fcecc2;
 }
 
 body.modo-escuro footer {
-  background-color: #111;
-  color: #fff;
+  background-color: #271609de;
+  color: #fcecc2;
 }
 
 body.modo-escuro .dot {
-  background-color: #facc15;
-  opacity: 0.4;
+  background-color: #e3b23c;
+  opacity: 0.3;
 }
 
 body.modo-escuro .sunflower {
-  opacity: 0.05;
+  opacity: 0.07;
 }
 
 
