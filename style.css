@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
@@ -258,6 +259,7 @@ main h2 {
   font-size: 1.1rem;
   border-radius: 12px;
   color: #3a2101;
+  border-left: 4px solid #fee331;
 }
 
 /* Rodapé */
@@ -269,7 +271,7 @@ footer {
   background-color: #3a2101;
 }
 
-/* Botão modo escuro */
+
 .modo-btn {
   position: fixed;
   top: 20px;
@@ -279,12 +281,16 @@ footer {
   font-size: 2.5rem;
   cursor: pointer;
   z-index: 10;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .modo-btn:hover {
   transform: scale(1.2);
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.4); /* sombra amarelinha */
+  background-color: rgba(250, 204, 21, 0.1); /* toque suave de amarelo */
+  border-radius: 50%;
 }
+
 
 
 /* 🌙 Modo escuro girassol aconchegante */
@@ -300,7 +306,7 @@ body.modo-escuro .header {
 }
 
 body.modo-escuro .motivacional {
-  background-color: #ffd05ae0;
+  background-color: rgba(227, 177, 60, 0.459);
 }
 
 body.modo-escuro .motivacional h2 {
@@ -324,6 +330,7 @@ body.modo-escuro .cabecalho {
 body.modo-escuro .categoria {
   background-color: #201106;
   color: #fcecc2;
+  border-left: 4px solid #e3b23c;
 }
 
 body.modo-escuro footer {
@@ -346,4 +353,9 @@ body.modo-escuro .faixa-girassol-atras {
 
 body.modo-escuro .entradas{
   color: #ffdc84;
+}
+
+body.modo-escuro .modo-btn:hover {
+  box-shadow: 0 0 12px rgba(227, 178, 60, 0.4); /* sombra dourada */
+  background-color: rgba(227, 178, 60, 0.1);
 }
