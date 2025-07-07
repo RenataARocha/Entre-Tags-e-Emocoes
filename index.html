@@ -3,37 +3,35 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Entre Tags e Emoções – Diário digital de Renata Rocha sobre sua transição para desenvolvedora front-end." />
+  <meta name="description" content="Entre Tags e Emoções – Diário digital de Renata Rocha sobre sua transição para desenvolvedora front-end." />
   <meta name="author" content="Renata Rocha" />
   <meta name="robots" content="index, follow" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Open Graph -->
+  <!-- 🖼 Open Graph (Facebook, LinkedIn, WhatsApp etc) -->
   <meta property="og:title" content="Entre Tags e Emoções – Diário de uma futura dev" />
-  <meta property="og:description"
-    content="Acompanhe a jornada de Renata Rocha em sua transição de carreira com reflexões, estudos e emoções sinceras." />
-  <meta property="og:image" content="https://seusite.com/assets/diario-capa.png" />
-  <meta property="og:url" content="https://seusite.com" />
+  <meta property="og:description" content="Acompanhe a jornada de Renata Rocha em sua transição de carreira com reflexões, estudos e emoções sinceras." />
+  <meta property="og:image" content="https://renataarocha.github.io/Entre-Tags-e-Emocoes/assets/diario-capa.png" />
+  <meta property="og:url" content="https://renataarocha.github.io/Entre-Tags-e-Emocoes/" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter -->
+  <!-- 🐦 Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Entre Tags e Emoções – Diário de uma futura dev" />
   <meta name="twitter:description" content="Reflexões reais de uma mulher em transição de carreira para front-end." />
-  <meta name="twitter:image" content="https://seusite.com/assets/diario-capa.png" />
+  <meta name="twitter:image" content="https://renataarocha.github.io/Entre-Tags-e-Emocoes/assets/diario-capa.png" />
+  <meta name="twitter:url" content="https://renataarocha.github.io/Entre-Tags-e-Emocoes/" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="assets/florzinha.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet" />
+  <!-- 🌻 Favicon -->
+  <link rel="icon" href="assets/girassol1.png" type="image/png" />
+
+  <!-- 🖋 Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Dancing+Script:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <!-- Estilo -->
+  <!-- 🎨 Estilo -->
   <link rel="stylesheet" href="style.css" />
 
   <title>Entre Tags e Emoções</title>
@@ -41,17 +39,20 @@
 
 <body>
   <div class="fundo-dots"></div>
-  <div class="fundo-girassol"></div>
+  <div class="fundo-girassol">
+    <div class="sunflower sunflower-1"></div>
+    <div class="sunflower sunflower-2"></div>
+    <div class="sunflower sunflower-3"></div>
+    <div class="sunflower sunflower-4"></div>
+    <div class="sunflower sunflower-5"></div>
+  </div>
 
   <img src="assets/faixa-girassol.png" alt="Faixa de girassóis" class="faixa-girassol-atras" />
+
   <div class="card-principal">
-
-
     <div class="motivacional">
-      <div>
-        <h2>Motivação do Dia 🌞</h2>
-        <p id="frase-dia">Carregando frase inspiradora...</p>
-      </div>
+      <h2>Motivação do Dia 🌞</h2>
+      <p id="frase-dia">Carregando frase inspiradora...</p>
     </div>
 
     <header class="header">
@@ -60,13 +61,13 @@
     </header>
   </div>
 
-
   <button id="modo-toggle" aria-label="Alternar modo" class="modo-btn">🌙</button>
 
   <main>
     <h2 class="entradas">Minhas Entradas</h2>
     <section>
 
+      <!-- 📝 Entradas do diário -->
       <div class="card-container">
         <article>
           <header class="cabecalho">
@@ -74,8 +75,7 @@
             <time datetime="2024-01-15">15 de Janeiro de 2024</time>
           </header>
           <div class="conteudo">
-            <p>Hoje dei o primeiro passo na minha transição de carreira... algo dentro de mim dizia que eu estava no
-              caminho certo.</p>
+            <p>Hoje dei o primeiro passo na minha transição de carreira... algo dentro de mim dizia que eu estava no caminho certo.</p>
           </div>
           <footer class="categoria">😌 Reflexiva</footer>
         </article>
@@ -101,8 +101,7 @@
             <time datetime="2024-03-20">20 de Março de 2024</time>
           </header>
           <div class="conteudo">
-            <p>Hoje meu projeto deu erro pela milésima vez... Quando finalmente vi o botão funcionando, meu coração
-              pulou.</p>
+            <p>Hoje meu projeto deu erro pela milésima vez... Quando finalmente vi o botão funcionando, meu coração pulou.</p>
           </div>
           <footer class="categoria">💪 Persistente</footer>
         </article>
@@ -167,8 +166,7 @@
             <time datetime="2024-05-27">27 de Maio de 2024</time>
           </header>
           <div class="conteudo">
-            <p>Decidi criar meu próprio app de organização... Vai se chamar “Organizadora do Lar” – e tá ficando um
-              charme só!</p>
+            <p>Decidi criar meu próprio app de organização... Vai se chamar “Organizadora do Lar” – e tá ficando um charme só!</p>
           </div>
           <footer class="categoria">💗 Criativa e empolgada</footer>
         </article>
@@ -200,15 +198,6 @@
         </article>
       </div>
 
-      <div class="fundo-girassol">
-        <div class="sunflower sunflower-1"></div>
-        <div class="sunflower sunflower-2"></div>
-        <div class="sunflower sunflower-3"></div>
-        <div class="sunflower sunflower-4"></div>
-        <div class="sunflower sunflower-5"></div>
-      </div>
-
-
     </section>
   </main>
 
@@ -217,6 +206,7 @@
     <p><small>&copy; 2025 – Entre Tags e Emoções</small></p>
   </footer>
 
+  <!-- 🚀 Scripts -->
   <script src="script.js"></script>
 
 </body>
